@@ -6,9 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53e16d04-7d78-44bb-8680-7b1547519b46" name="Default Changelist" comment="first">
+    <list default="true" id="53e16d04-7d78-44bb-8680-7b1547519b46" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/neu/film/controller/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/neu/film/controller/MovieController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -359,7 +358,7 @@
       <workItem from="1573521358018" duration="564000" />
       <workItem from="1575879378501" duration="1258000" />
       <workItem from="1575950069155" duration="2753000" />
-      <workItem from="1575961796775" duration="684000" />
+      <workItem from="1575961796775" duration="1291000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1575955090720</created>
@@ -382,21 +381,47 @@
       <option name="project" value="LOCAL" />
       <updated>1575962005152</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="first">
+      <created>1575962501532</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575962501532</updated>
+    </task>
+    <task id="LOCAL-00005" summary="first">
+      <created>1575962657593</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1575962657594</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
-    <option name="LAST_COMMIT_MESSAGE" value="first" />
+    <MESSAGE value="first again" />
+    <option name="LAST_COMMIT_MESSAGE" value="first again" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="372" y="12" key="CommitChangelistDialog2" timestamp="1575962498379">
+    <state x="372" y="12" key="CommitChangelistDialog2" timestamp="1575962689983">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="372" y="12" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1575962498379" />
+    <state x="372" y="12" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1575962689983" />
     <state x="147" y="66" key="DiffContextDialog" timestamp="1575955594097">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -409,10 +434,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="270" y="59" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1575954605943" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1575962604275">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1575962678351">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1575962604275" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1575962678351" />
     <state x="578" y="311" key="git4idea.ui.GitResetDialog" timestamp="1575955726461">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
