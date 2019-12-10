@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.neu.film.mapper.MovieTypeMapper">
+    <resultMap id="MovieType" type="cn.neu.film.pojo.MovieType">
+        <id column="MT_ID" property="mtId"/>
+        <result column="MT_NAME" property="mtName"/>
+        <result column="MT_IFDELETE" property="mtIfDelete"/>
+    </resultMap>
+
+    <insert id="addMovieType" parameterType="cn.neu.film.pojo.MovieType" >
+        insert into movie_type
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="mtId != null">
+                MT_ID,
+            </if>
+            <if test="mtName != null">
+                MT_NAME,
+            </if>
+            <if test="mtIfDelete != null">
+                MT_IFDELETE,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="mtId != null">
+                #{mtId},
+            </if>
+            <if test="mlName != null">
+                #{mtName},
+            </if>
+            <if test="mtIfDelete != null">
+                #{mtIfDelete},
+            </if>
+        </trim>
+    </insert>
+
+    <select id="findMovieTypeName" parameterType="java.lang.String" resultType="java.lang.String">
+        select MTt_NAME from movie_type where MT_NAME=#{mtName} and MT_IFDELETE != 1
+    </select>
+
+    <select id="findMovieType" resultType="cn.neu.film.pojo.MovieType">
+        select MT_ID mtId,MT_NAME mtName,MT_IFDELETE mtIfDelete from movie_type where MT_IFDELETE != 1
+    </select>
+</mapper>

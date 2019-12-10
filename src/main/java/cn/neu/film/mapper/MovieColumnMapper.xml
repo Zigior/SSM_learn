@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.neu.film.mapper.MovieColumnMapper">
+    <resultMap id="MovieColumn" type="cn.neu.film.pojo.MovieColumn">
+        <id column="MC_ID" property="mcId"/>
+        <result column="MC_NAME" property="mcName"/>
+        <result column="MC_IFDELETE" property="mcIfDelete"/>
+    </resultMap>
+    <insert id="addMovieColumn" parameterType="cn.neu.film.pojo.MovieColumn">
+        insert into movie_column
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="mcId != null">
+                MC_ID,
+            </if>
+            <if test="mcName != null">
+                MC_NAME,
+            </if>
+            <if test="mcIfDelete != null">
+                MC_IFDELETE,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="mcId != null">
+                #{mcId},
+            </if>
+            <if test="mcName != null">
+                #{mcName},
+            </if>
+            <if test="mcIfDelete != null">
+                #{mcIfDelete},
+            </if>
+            </trim>
+    </insert>
+
+    <select id="findMovieColumnName" parameterType="java.lang.String" resultType="java.lang.String">
+        select MC_NAME from movie_column where MC_NAME = #{movieColumnName} and MC_IFDELETE != 1
+    </select>
+
+    <select id="findMovieColumn" resultType="cn.neu.film.pojo.MovieColumn">
+        select MC_ID mcId,MC_NAME mcName,MC_IFDELETE mcIfDelete from movie_column where MC_IFDELETE != 1
+    </select>
+</mapper>

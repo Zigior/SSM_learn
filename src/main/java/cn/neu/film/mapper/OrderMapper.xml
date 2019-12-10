@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.neu.film.mapper.OrderMapper">
+    <resultMap id="Order" type="cn.neu.film.pojo.Order">
+        <id column="O_ID" property="oId"/>
+        <result column="O_U_ID" property="ouId"/>
+        <result column="O_M_ID" property="omId"/>
+        <result column="O_GRADE" property="oGrade"/>
+        <result column="O_COST" property="oCost"/>
+        <result column="O_DESCRIBE" property="oDescribe"/>
+        <result column="O_IFDELETE" property="oIfDelete"/>
+        <result column="O_TIME" property="oTime"/>
+        <association property="user" javaType="cn.neu.film.pojo.User">
+            <result column="U_NAME" property="uName"/>
+        </association>
+        <association property="movie" javaType="cn.neu.film.pojo.Movie">
+            <result column="M_NAME" property="mName"/>
+        </association>
+    </resultMap>
+
+    <select id="findAllOrder" resultMap="Order">
+        select O_ID,O_U_ID,O_M_ID,O_GRADE,O_COST,O_DESCRIBE,O_IFDELETE,O_TIME,U_NAME,M_NAME from orders left join user on O_U_ID = U_ID left join movie on O_M_ID = M_ID where O_IFDELETE != 1
+    </select>
+
+    <select id="findOrderByName" resultMap="Order" parameterType="java.lang.String">
+        select O_ID,O_U_ID,O_M_ID,O_GRADE,O_COST,O_DESCRIBE,O_IFDELETE,O_TIME,U_NAME,M_NAME from orders left join user on O_U_ID = U_ID left join movie on O_M_ID = M_ID where O_IFDELETE != 1 and M_NAME like "%"#{getmName}"%" or U_NAME like "%"#{getmName}"%"
+    </select>
+
+    <update id="delOrder" parameterType="int">
+        update orders set O_IFDELETE = 1 where O_ID = #{getoId}
+    </update>
+
+    <update id="editDescribe" parameterType="cn.neu.film.pojo.Order">
+        update orders set O_DESCRIBE = #{oDescribe} where O_ID = #{oId}
+    </update>
+
+    <insert id="addOrder" parameterType="cn.neu.film.pojo.Order">
+        insert into orders
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="oId != null">
+                O_ID,
+            </if>
+            <if test="ouId != null">
+                O_U_ID,
+            </if>
+            <if test="omId != null">
+                O_M_ID,
+            </if>
+            <if test="oGrade != null">
+                O_GRADE,
+            </if>
+            <if test="oCost != null">
+                O_COST,
+            </if>
+            <if test="oDescribe != null">
+                O_DESCRIBE,
+            </if>
+            <if test="oIfDelete != null">
+                O_IFDELETE,
+            </if>
+            <if test="oTime != null">
+                O_TIME,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="oId != null">
+                #{oId},
+            </if>
+            <if test="ouId != null">
+                #{ouId},
+            </if>
+            <if test="omId != null">
+                #{omId},
+            </if>
+            <if test="oGrade != null">
+                #{oGrade},
+            </if>
+            <if test="oCost != null">
+                #{oCost},
+            </if>
+            <if test="oDescribe != null">
+                #{oDescribe},
+            </if>
+            <if test="oIfDelete != null">
+                #{oIfDelete},
+            </if>
+            <if test="oTime != null">
+                #{oTime},
+            </if>
+        </trim>
+    </insert>
+
+    <update id="updateDescribe" parameterType="cn.neu.film.pojo.Order">
+        update orders set O_GRADE = #{oGrade} ,O_DESCRIBE = #{oDescribe} where O_U_ID = #{ouId} and O_M_ID = #{omId} and O_IFDELETE != 1
+    </update>
+
+    <select id="findOrderByouIdAndomId" resultMap="Order">
+        select O_ID,O_U_ID,O_M_ID,O_GRADE,O_COST,O_DESCRIBE,O_IFDELETE,O_TIME,U_NAME,M_NAME from orders left join user on O_U_ID = U_ID left join movie on O_M_ID = M_ID where O_IFDELETE != 1 and O_U_ID = #{param1} and O_M_ID = #{param2}
+    </select>
+
+    <select id="findOrderDescribe" resultMap="Order">
+       select O_ID,O_U_ID,O_M_ID,O_GRADE,O_COST,O_DESCRIBE,O_IFDELETE,O_TIME,U_NAME,M_NAME from orders left join user on O_U_ID = U_ID left join movie on O_M_ID = M_ID where O_IFDELETE != 1 and O_M_ID = #{omId}
+    </select>
+</mapper>
