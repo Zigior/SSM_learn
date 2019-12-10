@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/addMovie" method="post">
+
+    <input type="text" name="mName" placeholder="请输入电影名"/><br/>
+    <input type="text" name="mIcon" placeholder="请输入电影图标"/><br/>
+    <input type="text" name="mFile" placeholder="请输入电影文件"/><br/>
+    <input type="text" name="mDirector" placeholder="请输入导演"/><br/>
+    <input type="text" name="mStar" placeholder="请输入主演"/><br/>
+    <input type="text" name="mColumn" placeholder="请输入元素"/><br/>
+    <input type="text" name="mType" placeholder="请输入类型"/><br/>
+    <input type="text" name="mLocation" placeholder="请输入地区"/><br/>
+    <input type="date" name="mDate" /><br/>
+    <input type="submit" value="提交">
+
+</form>
+<hr/>
+<form action="/addMovieColumn" method="post">
+    <input type="text" name="mcName" placeholder="请输入元素名"/><br/>
+    <input type="submit" value="提交">
+</form>
+<hr/>
+<form action="/addMovieLocation" method="post">
+    <input type="text" name="mlName" placeholder="请输入地区名"/><br/>
+    <input type="submit" value="提交">
+</form>
+<hr/>
+<form action="/addMovieType" method="post">
+    <input type="text" name="mtName" placeholder="请输入类型名"/><br/>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>

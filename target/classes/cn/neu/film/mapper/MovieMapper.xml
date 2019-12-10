@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.neu.film.mapper.MovieMapper">
+<resultMap id="Movie" type="cn.neu.film.pojo.Movie">
+    <id column="M_ID" property="mId"/>
+    <result column="M_NAME" property="mName"/>
+    <result column="M_ICON" property="mIcon"/>
+    <result column="M_FILE" property="mFile"/>
+    <result column="M_DIRECTOR" property="mDirector"/>
+    <result column="M_STAR" property="mStar"/>
+    <result column="M_COLUMN" property="mColumn"/>
+    <result column="M_TYPE" property="mType"/>
+    <result column="M_LOCATION" property="mLocation"/>
+    <result column="M_DATE" property="mDate"/>
+    <result column="M_VIEWS" property="mViews"/>
+    <result column="M_IFDELETE" property="mIfDelete"/>
+    <association property="movieColumn" javaType="cn.neu.film.pojo.MovieColumn">
+        <result column="MC_ID" property="mcId"/>
+        <result column="MC_NAME" property="mcName"/>
+    </association>
+    <association property="movieType" javaType="cn.neu.film.pojo.MovieType">
+        <result column="MT_ID" property="mtId"/>
+        <result column="MT_NAME" property="mtName"/>
+    </association>
+    <association property="movieLocation" javaType="cn.neu.film.pojo.MovieLocation">
+        <result column="ML_ID" property="mlId"/>
+        <result column="ML_NAME" property="mlName"/>
+    </association>
+</resultMap>
+    <insert id="addMovie" parameterType="cn.neu.film.pojo.Movie">
+        insert into movie
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="mId != null">
+                M_ID,
+            </if>
+            <if test="mName != null">
+                M_NAME,
+            </if>
+            <if test="mIcon != null">
+                M_ICON,
+            </if>
+            <if test="mFile != null">
+                M_FILE,
+            </if>
+            <if test="mDirector != null">
+                M_DIRECTOR,
+            </if>
+            <if test="mStar != null">
+                M_STAR,
+            </if>
+            <if test="mColumn != null">
+                M_COLUMN,
+            </if>
+            <if test="mType != null">
+                M_TYPE,
+            </if>
+            <if test="mLocation != null">
+                M_LOCATION,
+            </if>
+            <if test="mDate != null">
+                M_DATE,
+            </if>
+            <if test="mViews != null">
+                M_VIEWS,
+            </if>
+            <if test="mIfDelete != null">
+                M_IFDELETE,
+            </if>
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="mId != null">
+                #{mId},
+            </if>
+            <if test="mName != null">
+                #{mName},
+            </if>
+            <if test="mIcon != null">
+                #{mIcon},
+            </if>
+            <if test="mFile != null">
+                #{mFile},
+            </if>
+            <if test="mDirector != null">
+                #{mDirector},
+            </if>
+            <if test="mStar != null">
+                #{mStar},
+            </if>
+            <if test="mColumn != null">
+                #{mColumn},
+            </if>
+            <if test="mType != null">
+                #{mType},
+            </if>
+            <if test="mLocation != null">
+                #{mLocation},
+            </if>
+            <if test="mDate != null">
+                #{mDate},
+            </if>
+            <if test="mViews != null">
+                #{mViews},
+            </if>
+            <if test="mIfDelete != null">
+                #{mIfDelete},
+            </if>
+        </trim>
+    </insert>
+
+    <select id="findAllMovie" resultType="cn.neu.film.pojo.Movie">
+        select * from movie where M_IFDELETE != 1
+    </select>
+
+    <select id="findAllMovie2" resultMap="Movie">
+        select M_ID,M_NAME,M_ICON,M_FILE,M_DIRECTOR,M_STAR,M_COLUMN,M_TYPE,M_LOCATION,M_DATE,M_VIEWS,M_IFDELETE,MC_ID,MC_NAME,ML_ID,ML_NAME,MT_ID,MT_NAME from movie m left join movie_column mc on m.M_COLUMN = mc.MC_ID left join movie_Location ml on m.M_LOCATION = ml.ML_ID left join movie_type mt on m.M_TYPE = mt.MT_ID where m.M_IFDELETE != 1
+    </select>
+    <update id="delMovie" parameterType="int">
+        update movie set M_IFDELETE = 1 where M_ID = #{mId}
+    </update>
+
+    <select id="findAllMovieByName" resultMap="Movie" parameterType="java.lang.String">
+        select M_ID,M_NAME,M_ICON,M_FILE,M_DIRECTOR,M_STAR,M_COLUMN,M_TYPE,M_LOCATION,M_DATE,M_VIEWS,M_IFDELETE,MC_ID,MC_NAME,ML_ID,ML_NAME,MT_ID,MT_NAME from movie m left join movie_column mc on m.M_COLUMN = mc.MC_ID left join movie_Location ml on m.M_LOCATION = ml.ML_ID left join movie_type mt on m.M_TYPE = mt.MT_ID where m.M_IFDELETE != 1 and m.M_NAME like "%"#{mName}"%"
+    </select>
+
+    <update id="updateMovie" parameterType="cn.neu.film.pojo.Movie">
+        update movie set
+        <trim suffixOverrides=",">
+        <if test="mName != null">
+            M_NAME=#{mName},
+        </if>
+        <if test="mIcon != null">
+            M_ICON=#{mIcon},
+        </if>
+        <if test="mFile != null">
+            M_FILE=#{mFile},
+        </if>
+        <if test="mDirector != null">
+            M_DIRECTOR=#{mDirector},
+        </if>
+        <if test="mStar != null">
+            M_STAR=#{mStar},
+        </if>
+        <if test="mColumn != null">
+            M_COLUMN=#{mColumn},
+        </if>
+        <if test="mType != null">
+            M_TYPE=#{mType},
+        </if>
+        <if test="mLocation != null">
+            M_LOCATION=#{mLocation},
+        </if>
+        <if test="mDate != null">
+            M_DATE=#{mDate},
+        </if>
+        <if test="mViews != null">
+            M_VIEWS=#{mViews},
+        </if>
+        <if test="mIfDelete != null">
+            M_IFDELETE=#{mIfDelete},
+        </if>
+        </trim>
+        where M_ID = #{mId}
+    </update>
+
+    <select id="findMovieByType" resultMap="Movie" parameterType="int">
+        select M_ID,M_NAME,M_ICON,M_FILE,M_DIRECTOR,M_STAR,M_COLUMN,M_TYPE,M_LOCATION,M_DATE,M_VIEWS,M_IFDELETE,MC_ID,MC_NAME,ML_ID,ML_NAME,MT_ID,MT_NAME from movie m left join movie_column mc on m.M_COLUMN = mc.MC_ID left join movie_Location ml on m.M_LOCATION = ml.ML_ID left join movie_type mt on m.M_TYPE = mt.MT_ID where m.M_IFDELETE != 1 and m.M_TYPE = #{mtId}
+    </select>
+
+    <select id="findMovieByColumn" resultMap="Movie" parameterType="int">
+        select M_ID,M_NAME,M_ICON,M_FILE,M_DIRECTOR,M_STAR,M_COLUMN,M_TYPE,M_LOCATION,M_DATE,M_VIEWS,M_IFDELETE,MC_ID,MC_NAME,ML_ID,ML_NAME,MT_ID,MT_NAME from movie m left join movie_column mc on m.M_COLUMN = mc.MC_ID left join movie_Location ml on m.M_LOCATION = ml.ML_ID left join movie_type mt on m.M_TYPE = mt.MT_ID where m.M_IFDELETE != 1 and m.M_COLUMN = #{mcId}
+    </select>
+
+    <select id="findMovieByLocation" resultMap="Movie" parameterType="int">
+        select M_ID,M_NAME,M_ICON,M_FILE,M_DIRECTOR,M_STAR,M_COLUMN,M_TYPE,M_LOCATION,M_DATE,M_VIEWS,M_IFDELETE,MC_ID,MC_NAME,ML_ID,ML_NAME,MT_ID,MT_NAME from movie m left join movie_column mc on m.M_COLUMN = mc.MC_ID left join movie_Location ml on m.M_LOCATION = ml.ML_ID left join movie_type mt on m.M_TYPE = mt.MT_ID where m.M_IFDELETE != 1 and m.M_LOCATION = #{mlId}
+    </select>
+
+    <select id="findMovieById" resultMap="Movie" parameterType="int">
+        select M_ID,M_NAME,M_ICON,M_FILE,M_DIRECTOR,M_STAR,M_COLUMN,M_TYPE,M_LOCATION,M_DATE,M_VIEWS,M_IFDELETE,MC_ID,MC_NAME,ML_ID,ML_NAME,MT_ID,MT_NAME from movie m left join movie_column mc on m.M_COLUMN = mc.MC_ID left join movie_Location ml on m.M_LOCATION = ml.ML_ID left join movie_type mt on m.M_TYPE = mt.MT_ID where m.M_IFDELETE != 1 and m.M_ID = #{getmId}
+    </select>
+</mapper>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.neu.film.mapper.MovieLocationMapper">
+    <resultMap id="MovieLocation" type="cn.neu.film.pojo.MovieLocation">
+        <id column="ML_ID" property="mlId"/>
+        <result column="ML_NAME" property="mlName"/>
+        <result column="ML_IFDELETE" property="mlIfDelete"/>
+    </resultMap>
+
+    <insert id="addMovieLocation" parameterType="cn.neu.film.pojo.MovieLocation" >
+        insert into movie_location
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="mlId != null">
+                ML_ID,
+            </if>
+            <if test="mlName != null">
+                ML_NAME,
+            </if>
+            <if test="mlIfDelete != null">
+                ML_IFDELETE,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="mlId != null">
+                #{mlId},
+            </if>
+            <if test="mlName != null">
+                #{mlName},
+            </if>
+            <if test="mlIfDelete != null">
+                #{mlIfDelete},
+            </if>
+        </trim>
+    </insert>
+
+    <select id="findMovieLocationName" parameterType="java.lang.String" resultType="java.lang.String">
+        select ML_NAME from movie_location where ML_NAME=#{mlName} and ML_IFDELETE != 1
+    </select>
+
+    <select id="findMovieLocation" resultType="cn.neu.film.pojo.MovieLocation">
+        select ML_ID mlId,ML_NAME mlName,ML_IFDELETE mlIfDelete from movie_location where ML_IFDELETE != 1
+    </select>
+</mapper>

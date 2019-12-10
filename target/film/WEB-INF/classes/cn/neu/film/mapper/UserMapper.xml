@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.neu.film.mapper.UserMapper">
+    <resultMap id="User" type="cn.neu.film.pojo.User">
+        <id column="U_ID" property="uId"/>
+        <result column="U_NAME" property="uName"/>
+        <result column="U_PWD" property="uPwd"/>
+        <result column="U_MAIL" property="uMail"/>
+        <result column="U_ICON" property="uIcon"/>
+        <result column="U_EXP" property="uExp"/>
+        <result column="U_CREATETIME" property="uCreateTime"/>
+        <result column="U_LASTLOGINTIME" property="uLastLoginTime"/>
+        <result column="U_ACCOUNT" property="uAccount"/>
+        <result column="U_STATE" property="uState"/>
+        <result column="U_SIGNDAYS" property="uSignDays"/>
+        <result column="U_IFDELETE" property="uIfDelete"/>
+        <association property="userState" javaType="cn.neu.film.pojo.UserState">
+            <result column="US_ID" property="usId"/>
+            <result column="US_NAME" property="usName"/>
+        </association>
+    </resultMap>
+    <insert id="addUser" parameterType="cn.neu.film.pojo.User">
+        insert into user
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="uId != null">
+                U_ID,
+            </if>
+            <if test="uName != null">
+                U_NAME,
+            </if>
+            <if test="uPwd != null">
+                U_PWD,
+            </if>
+            <if test="uMail != null">
+                U_MAIL,
+            </if>
+            <if test="uIcon != null">
+                U_ICON,
+            </if>
+            <if test="uExp != null">
+                U_EXP,
+            </if>
+            <if test="uCreateTime != null">
+                U_CREATETIME,
+            </if>
+            <if test="uLastLoginTime != null">
+                U_LASTLOGINTIME,
+            </if>
+            <if test="uAccount != null">
+                U_ACCOUNT,
+            </if>
+            <if test="uState != null">
+                U_STATE,
+            </if>
+            <if test="uSignDays != null">
+                U_SIGNDAYS,
+            </if>
+            <if test="uIfDelete != null">
+                U_IFDELETE,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="uId != null">
+                #{uId},
+            </if>
+            <if test="uName != null">
+                #{uName},
+            </if>
+            <if test="uPwd != null">
+                #{uPwd},
+            </if>
+            <if test="uMail != null">
+                #{uMail},
+            </if>
+            <if test="uIcon != null">
+                #{uIcon},
+            </if>
+            <if test="uExp != null">
+                #{uExp},
+            </if>
+            <if test="uCreateTime != null">
+                #{uCreateTime},
+            </if>
+            <if test="uLastLoginTime != null">
+                #{uLastLoginTime},
+            </if>
+            <if test="uAccount != null">
+                100,
+            </if>
+            <if test="uState != null">
+                2,
+            </if>
+            <if test="uSignDays != null">
+                #{uSignDays},
+            </if>
+            <if test="uIfDelete != null">
+                #{uIfDelete},
+            </if>
+        </trim>
+    </insert>
+
+    <select id="checkLogin" resultType="java.lang.String" parameterType="java.lang.String">
+        select U_PWD from user where U_NAME = #{uNameOruMail} or U_MAIL = #{uNameOruMail} and U_IFDELETE != 1
+    </select>
+
+    <select id="findAllUser" resultMap="User">
+        select U_ID,U_NAME,U_PWD,U_MAIL,U_ICON,U_EXP,U_CREATETIME,U_LASTLOGINTIME,U_ACCOUNT,U_STATE,U_SIGNDAYS,U_IFDELETE,US_ID,US_NAME from user left join user_state on U_STATE = US_ID where U_IFDELETE != 1
+    </select>
+
+    <select id="findUserByuNameOruMail" resultMap="User" parameterType="java.lang.String">
+        select U_ID,U_NAME,U_PWD,U_MAIL,U_ICON,U_EXP,U_CREATETIME,U_LASTLOGINTIME,U_ACCOUNT,U_STATE,U_SIGNDAYS,U_IFDELETE,US_ID,US_NAME from user left join user_state on U_STATE = US_ID where U_IFDELETE != 1 and U_NAME like "%"#{uName}"%" or U_MAIL like "%"#{uName}"%"
+    </select>
+
+    <update id="deleteUser" parameterType="int">
+        update user set U_IFDELETE = 1 where U_ID = #{uId}
+    </update>
+
+    <update id="updateUser" parameterType="cn.neu.film.pojo.User">
+        update user set
+        <trim  suffixOverrides=",">
+            <if test="uName != null">
+                U_NAME=#{uName},
+            </if>
+            <if test="uPwd != null">
+                U_PWD=#{uPwd},
+            </if>
+            <if test="uMail != null">
+                U_MAIL=#{uMail},
+            </if>
+            <if test="uIcon != null">
+                U_ICON=#{uIcon},
+            </if>
+            <if test="uExp != null">
+                U_EXP=#{uExp},
+            </if>
+            <if test="uCreateTime != null">
+                U_CREATETIME=#{uCreateTime},
+            </if>
+            <if test="uLastLoginTime != null">
+                U_LASTLOGINTIME=#{uLastLoginTime},
+            </if>
+            <if test="uAccount != null">
+                U_ACCOUNT=#{uAccount},
+            </if>
+            <if test="uState != null">
+                U_STATE=#{uState},
+            </if>
+            <if test="uSignDays != null">
+                U_SIGNDAYS=#{uSignDays},
+            </if>
+            <if test="uIfDelete != null">
+                U_IFDELETE=#{uIfDelete},
+            </if>
+        </trim>
+        where U_ID = #{uId}
+    </update>
+
+    <select id="findUserByName" resultMap="User" parameterType="java.lang.String">
+        select U_ID,U_NAME,U_PWD,U_MAIL,U_ICON,U_EXP,U_CREATETIME,U_LASTLOGINTIME,U_ACCOUNT,U_STATE,U_SIGNDAYS,U_IFDELETE,US_ID,US_NAME from user left join user_state on U_STATE = US_ID where U_IFDELETE != 1 and U_NAME = #{uName}  or U_MAIL = #{uName}
+    </select>
+</mapper>
