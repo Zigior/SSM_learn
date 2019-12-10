@@ -6,137 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53e16d04-7d78-44bb-8680-7b1547519b46" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/config/CORSConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/config/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/config/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/config/spring-comm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/config/spring-mvc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/afterLogin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/afterRegist.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/image/jojo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/welcome.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/addMovie.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/regist.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/neu/film/controller/MovieController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/neu/film/controller/OrderController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/neu/film/controller/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/neu/film/mapper/MovieColumnMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/neu/film/mapper/MovieColumnMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/neu/film/mapper/MovieLocationMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/neu/film/mapper/MovieLocationMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/neu/film/mapper/MovieMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/neu/film/mapper/MovieMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/neu/film/mapper/MovieTypeMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/neu/film/mapper/MovieTypeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/neu/film/mapper/OrderMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/neu/film/mapper/OrderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/neu/film/mapper/UserMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/neu/film/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/neu/film/mapper/UserStateMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/neu/film/mapper/UserStateMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/neu/film/pojo/Movie.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/neu/film/pojo/MovieColumn.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/neu/film/pojo/MovieLocation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/neu/film/pojo/MovieType.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/neu/film/pojo/Order.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/neu/film/pojo/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/neu/film/pojo/UserState.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/neu/film/service/MovieService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/neu/film/service/OrderService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/neu/film/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/neu/film/service/impl/MovieServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/neu/film/service/impl/OrderServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/cn/neu/film/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/config/CORSConfig$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/config/CORSConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/config/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/config/spring-comm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/config/spring-mvc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/cn/neu/film/controller/MovieController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/cn/neu/film/controller/OrderController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/cn/neu/film/controller/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/cn/neu/film/mapper/MovieColumnMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/cn/neu/film/mapper/MovieColumnMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/cn/neu/film/mapper/MovieLocationMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/cn/neu/film/mapper/MovieLocationMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/cn/neu/film/mapper/MovieMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/cn/neu/film/mapper/MovieMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/cn/neu/film/mapper/MovieTypeMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/cn/neu/film/mapper/MovieTypeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/cn/neu/film/mapper/OrderMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/cn/neu/film/mapper/OrderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/cn/neu/film/mapper/UserMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/cn/neu/film/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/cn/neu/film/mapper/UserStateMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/cn/neu/film/mapper/UserStateMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/cn/neu/film/pojo/Movie.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/cn/neu/film/pojo/MovieColumn.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/cn/neu/film/pojo/MovieLocation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/cn/neu/film/pojo/MovieType.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/cn/neu/film/pojo/Order.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/cn/neu/film/pojo/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/cn/neu/film/pojo/UserState.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/cn/neu/film/service/MovieService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/cn/neu/film/service/OrderService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/cn/neu/film/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/cn/neu/film/service/impl/MovieServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/cn/neu/film/service/impl/OrderServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/cn/neu/film/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/config/CORSConfig$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/config/CORSConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/config/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/config/spring-comm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/classes/config/spring-mvc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/html/afterLogin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/html/afterRegist.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/image/jojo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/jsp/welcome.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/activation-1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/aspectjweaver-1.8.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/c3p0-0.9.2.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/commons-beanutils-1.8.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/commons-collections-3.2.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/commons-fileupload-1.3.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/commons-io-2.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/commons-lang-2.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/ezmorph-1.0.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/jackson-annotations-2.8.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/jackson-core-2.8.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/jackson-databind-2.8.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/json-20140107.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/log4j-1.2.17.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/mail-1.4.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/mchange-commons-java-0.2.3.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/mybatis-3.2.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/mybatis-spring-1.3.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/mysql-connector-java-5.1.38.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/spring-aop-4.3.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/spring-beans-4.3.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/spring-context-4.3.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/spring-context-support-4.3.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/spring-core-4.3.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/spring-expression-4.3.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/spring-jdbc-4.3.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/spring-oxm-4.3.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/spring-test-4.3.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/spring-tx-4.3.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/spring-web-4.3.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/lib/spring-webmvc-4.3.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/addMovie.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/film/regist.html" afterDir="false" />
+    <list default="true" id="53e16d04-7d78-44bb-8680-7b1547519b46" name="Default Changelist" comment="first">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -486,7 +357,7 @@
       <workItem from="1573452709564" duration="2501000" />
       <workItem from="1573521358018" duration="564000" />
       <workItem from="1575879378501" duration="1258000" />
-      <workItem from="1575950069155" duration="1523000" />
+      <workItem from="1575950069155" duration="2139000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1575955090720</created>
@@ -495,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575955090720</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="first">
+      <created>1575955293957</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1575955293957</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,10 +384,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="first" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="372" y="12" key="CommitChangelistDialog2" timestamp="1575955087705">
+    <state x="372" y="12" key="CommitChangelistDialog2" timestamp="1575955682025">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="372" y="12" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1575955087705" />
+    <state x="372" y="12" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1575955682025" />
+    <state x="147" y="66" key="DiffContextDialog" timestamp="1575955594097">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="147" y="66" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1575955594097" />
     <state x="549" y="158" key="FileChooserDialogImpl" timestamp="1575954768992">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -518,6 +400,14 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="270" y="59" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1575954605943" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1575955735155">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1575955735155" />
+    <state x="578" y="311" key="git4idea.ui.GitResetDialog" timestamp="1575955726461">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="578" y="311" key="git4idea.ui.GitResetDialog/0.0.1536.834@0.0.1536.834" timestamp="1575955726461" />
   </component>
   <component name="masterDetails">
     <states>
