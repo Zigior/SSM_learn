@@ -12,10 +12,13 @@ import cn.neu.film.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 @Service("movieService")
-public class MovieServiceImpl implements MovieService {
+public class MovieServiceImpl implements MovieService{
+    public static int A = 1;
     @Autowired
     MovieMapper movieMapper;
     @Autowired

@@ -6,8 +6,20 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53e16d04-7d78-44bb-8680-7b1547519b46" name="Default Changelist" comment="">
+    <list default="true" id="53e16d04-7d78-44bb-8680-7b1547519b46" name="Default Changelist" comment="again again">
+      <change afterPath="$PROJECT_DIR$/.idea/SSM_learn.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/image/video-js.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SSM_learn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/neu/film/controller/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/neu/film/controller/MovieController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/neu/film/pojo/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/neu/film/pojo/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/neu/film/service/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/neu/film/service/MovieService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/neu/film/service/impl/MovieServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/neu/film/service/impl/MovieServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/film/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/film/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/film/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/film/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,33 +29,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Interface" />
         <option value="mybatis-mapper.xml" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>usertest</find>
-      <find>ut</find>
-      <find>insert</find>
-      <find>Location</find>
-      <find>MovieColumn</find>
-      <find>mybat</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
-    <option name="ADD_SUFFIX_TO_CHERRY_PICKS_OF_PUBLISHED_COMMITS" value="false" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IgnoredFileRootStore">
-    <option name="generatedRoots">
-      <set>
-        <option value="D:\SSM_learn\.idea" />
-      </set>
-    </option>
+    <option name="ADD_SUFFIX_TO_CHERRY_PICKS_OF_PUBLISHED_COMMITS" value="false" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -51,13 +46,6 @@
     <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="ProjectId" id="1UjoT9yqztuKCbBBEMitdQ0zAnb" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -99,7 +87,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -109,22 +96,23 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572936083716" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/image" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\SSM_learn\src\main\webapp\WEB-INF\image" />
+      <recent name="D:\SSM_learn\src\main\webapp\WEB-INF" />
+      <recent name="D:\SSM_learn\src\main\webapp" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\SSM_learn\src\main\webapp\WEB-INF\image" />
+      <recent name="D:\SSM_learn\src\main\webapp" />
       <recent name="D:\SSM_learn\src\main\webapp\WEB-INF\html" />
       <recent name="D:\SSM_learn\src\main\webapp\WEB-INF" />
-      <recent name="D:\SSM_learn\src\main\webapp" />
       <recent name="D:\SSM_learn\src\main" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\SSM_learn\src\main\webapp" />
-      <recent name="D:\SSM_learn\src\main\webapp\WEB-INF" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.tomcat8">
@@ -292,18 +280,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -358,7 +334,33 @@
       <workItem from="1573521358018" duration="564000" />
       <workItem from="1575879378501" duration="1258000" />
       <workItem from="1575950069155" duration="2753000" />
-      <workItem from="1575961796775" duration="1291000" />
+      <workItem from="1575961796775" duration="2731000" />
+      <workItem from="1576029942986" duration="432000" />
+      <workItem from="1576030916213" duration="543000" />
+      <workItem from="1576217213236" duration="78000" />
+      <workItem from="1576222210613" duration="126000" />
+      <workItem from="1576716087921" duration="32000" />
+      <workItem from="1576805747583" duration="189000" />
+      <workItem from="1577075484581" duration="850000" />
+      <workItem from="1577275565179" duration="947000" />
+      <workItem from="1577332505627" duration="1258000" />
+      <workItem from="1577446900890" duration="1246000" />
+      <workItem from="1578235609173" duration="215000" />
+      <workItem from="1578478007136" duration="37000" />
+      <workItem from="1591583442114" duration="3748000" />
+      <workItem from="1591680760336" duration="45000" />
+      <workItem from="1595639868159" duration="4255000" />
+      <workItem from="1595811352175" duration="1600000" />
+      <workItem from="1595814058751" duration="542000" />
+      <workItem from="1595815394283" duration="150000" />
+      <workItem from="1595820206776" duration="7367000" />
+      <workItem from="1595896637418" duration="8480000" />
+      <workItem from="1595983083471" duration="1807000" />
+      <workItem from="1596072372870" duration="5054000" />
+      <workItem from="1596093579068" duration="2265000" />
+      <workItem from="1596098106397" duration="986000" />
+      <workItem from="1596163598453" duration="599000" />
+      <workItem from="1596414978893" duration="501000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1575955090720</created>
@@ -395,11 +397,28 @@
       <option name="project" value="LOCAL" />
       <updated>1575962657594</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="again">
+      <created>1575963137876</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1575963137876</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -411,37 +430,103 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
     <MESSAGE value="first again" />
-    <option name="LAST_COMMIT_MESSAGE" value="first again" />
+    <MESSAGE value="again" />
+    <option name="LAST_COMMIT_MESSAGE" value="again" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="372" y="12" key="CommitChangelistDialog2" timestamp="1575962689983">
+    <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596078917217">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="372" y="12" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1575962689983" />
-    <state x="147" y="66" key="DiffContextDialog" timestamp="1575955594097">
+    <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1596078917217" />
+    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1596087993441">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="147" y="66" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1575955594097" />
-    <state x="549" y="158" key="FileChooserDialogImpl" timestamp="1575954768992">
+    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1596087993441" />
+    <state width="1294" height="222" key="GridCell.Tab.0.bottom" timestamp="1596078909626">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="549" y="158" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1575954768992" />
-    <state x="270" y="59" key="SettingsEditor" timestamp="1575954605943">
+    <state width="1294" height="222" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1596078909626" />
+    <state width="1294" height="222" key="GridCell.Tab.0.center" timestamp="1596078909626">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="270" y="59" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1575954605943" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1575962678351">
+    <state width="1294" height="222" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1596078909626" />
+    <state width="1294" height="222" key="GridCell.Tab.0.left" timestamp="1596078909626">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1575962678351" />
-    <state x="578" y="311" key="git4idea.ui.GitResetDialog" timestamp="1575955726461">
+    <state width="1294" height="222" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1596078909626" />
+    <state width="1294" height="222" key="GridCell.Tab.0.right" timestamp="1596078909626">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="578" y="311" key="git4idea.ui.GitResetDialog/0.0.1536.834@0.0.1536.834" timestamp="1575955726461" />
+    <state width="1294" height="222" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1596078909626" />
+    <state width="1294" height="222" key="GridCell.Tab.1.bottom" timestamp="1596078909627">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1294" height="222" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1596078909627" />
+    <state width="1294" height="222" key="GridCell.Tab.1.center" timestamp="1596078909626">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1294" height="222" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1596078909626" />
+    <state width="1294" height="222" key="GridCell.Tab.1.left" timestamp="1596078909626">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1294" height="222" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1596078909626" />
+    <state width="1294" height="222" key="GridCell.Tab.1.right" timestamp="1596078909626">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1294" height="222" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1596078909626" />
+    <state width="1294" height="222" key="GridCell.Tab.2.bottom" timestamp="1596078909627">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1294" height="222" key="GridCell.Tab.2.bottom/0.0.1536.834@0.0.1536.834" timestamp="1596078909627" />
+    <state width="1294" height="222" key="GridCell.Tab.2.center" timestamp="1596078909627">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1294" height="222" key="GridCell.Tab.2.center/0.0.1536.834@0.0.1536.834" timestamp="1596078909627" />
+    <state width="1294" height="222" key="GridCell.Tab.2.left" timestamp="1596078909627">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1294" height="222" key="GridCell.Tab.2.left/0.0.1536.834@0.0.1536.834" timestamp="1596078909627" />
+    <state width="1294" height="222" key="GridCell.Tab.2.right" timestamp="1596078909627">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1294" height="222" key="GridCell.Tab.2.right/0.0.1536.834@0.0.1536.834" timestamp="1596078909627" />
+    <state width="1294" height="222" key="GridCell.Tab.3.bottom" timestamp="1596078909627">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1294" height="222" key="GridCell.Tab.3.bottom/0.0.1536.834@0.0.1536.834" timestamp="1596078909627" />
+    <state width="1294" height="222" key="GridCell.Tab.3.center" timestamp="1596078909627">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1294" height="222" key="GridCell.Tab.3.center/0.0.1536.834@0.0.1536.834" timestamp="1596078909627" />
+    <state width="1294" height="222" key="GridCell.Tab.3.left" timestamp="1596078909627">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1294" height="222" key="GridCell.Tab.3.left/0.0.1536.834@0.0.1536.834" timestamp="1596078909627" />
+    <state width="1294" height="222" key="GridCell.Tab.3.right" timestamp="1596078909627">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1294" height="222" key="GridCell.Tab.3.right/0.0.1536.834@0.0.1536.834" timestamp="1596078909627" />
+    <state x="299" y="72" key="Maven.ArtifactSearchDialog" timestamp="1595812640788">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="299" y="72" key="Maven.ArtifactSearchDialog/0.0.1536.834@0.0.1536.834" timestamp="1595812640788" />
+    <state x="270" y="62" key="SettingsEditor" timestamp="1595639888114">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="270" y="62" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1595639888114" />
+    <state x="93" y="93" width="1350" height="648" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1595920159833">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="93" y="93" width="1350" height="648" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.834@0.0.1536.834" timestamp="1595920159833" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1595916723281">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1595916723281" />
   </component>
   <component name="masterDetails">
     <states>

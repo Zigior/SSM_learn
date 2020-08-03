@@ -15,6 +15,7 @@ import java.util.List;
 
 @RestController
 public class MovieController {
+    public static int A = 1;
     @Autowired
     MovieService movieService;
     //添加电影

@@ -2,12 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>测试</title>
+    <link href="https://vjs.zencdn.net/7.8.3/video-js.css" rel="stylesheet" />
 </head>
 <body>
-<h2>Hello World!</h2>
-<a href="login.html">登录</a>
-<a href="regist.html">注册</a>
-<a href="addMovie.html">添加电影</a>
+
+<video
+        id="my-video"
+        class="video-js"
+        controls
+        preload="auto"
+        width="640"
+        height="264"
+        data-setup="{}"
+>
+    <source src="rtmp://58.200.131.2:1935/livetv/hunantv"/>
+<!--    <source src="rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov" type="video/mp4" />-->
+<!--    <source src="MY_VIDEO.webm" type="video/webm" />-->
+    <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a
+        web browser that
+        <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+        >
+    </p>
+</video>
+
+<script src="https://vjs.zencdn.net/7.8.3/video.js"></script>
 </body>
 </html>

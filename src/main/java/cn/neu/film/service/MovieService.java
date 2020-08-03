@@ -13,6 +13,9 @@ public interface MovieService {
      */
     int addMovie(Movie movie);
 
+    default int movie2() {
+       return 2;
+    }
     /**
      * 查询所有电影
      */

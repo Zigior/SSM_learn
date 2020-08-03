@@ -2,6 +2,9 @@ package cn.neu.film.pojo;
 
 
 public class Movie {
+    public static int A = 1;
+
+
     private int mId;
     private String mName;
     private String mIcon;
@@ -21,6 +24,7 @@ public class Movie {
     public Movie() {
         super();
     }
+
 
     public Movie(int mId, String mName, String mIcon, String mFile, String mDirector, String mStar, int mColumn, int mType, int mLocation, String mDate, int mViews, int mIfDelete) {
         super();
